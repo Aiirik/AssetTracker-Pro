@@ -1,0 +1,34 @@
+{
+  "name": "asset-management-system",
+  "version": "1.0.0",
+  "description": "A modern asset management system with barcode tracking",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && nodemon server.js",
+    "client": "cd client && npm start",
+    "build": "cd client && npm run build"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.5.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "qrcode": "^1.5.3",
+    "pdfkit": "^0.13.0"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0",
+    "nodemon": "^3.0.1"
+  },
+  "keywords": [
+    "asset-management",
+    "barcode-tracking",
+    "inventory"
+  ],
+  "author": "AMS Team",
+  "license": "MIT"
+}
